@@ -25,7 +25,7 @@ from scrapingbee import ScrapingBeeClient
 
 
 # Configure your OpenAI API key
-openai.api_key = "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" #Enter you api key here
+openai.api_key = "ENTER_YOUR_API_KEY_HERE"
 
 # Setting Streamlit Page UI
 
@@ -73,7 +73,7 @@ def perform_sentiment_analysis(reviews):
         
 def scrape_page(url):
     headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'}
-    client = ScrapingBeeClient(api_key='I9OMQTVF9MHCTFSLF78XBV5EBTU6LNAFKDNNGIFCK2828VDQX8UCZ4H15XLT5W2UNGJO62IH4O69IE52')
+    client = ScrapingBeeClient(api_key='ENTER_YOUR_API_KEY_HERE')
     page = client.get(url)
     soup1 = BeautifulSoup(page.content, 'html.parser')
     soup2 = BeautifulSoup(soup1.prettify(), "html.parser")
