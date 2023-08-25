@@ -17,7 +17,7 @@ from scrapingbee import ScrapingBeeClient
 
 nltk.download('punkt')
 # Set your OpenAI API key
-openai.api_key = "ENTER_YOUR_API_KEY_HERE"
+openai.api_key = "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"
 
 # Function to generate chatbot response using OpenAI
 def amz_chatbot(prompt):
